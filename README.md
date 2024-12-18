@@ -1,12 +1,12 @@
-# Previsão do tempo
+# Aplicación de Previsión del tiempo!
 ESPAÑOL:
-Este proyecto consiste en un prototipo de diseño para una aplicación bancaria, diseñado para ofrecer una experiencia de usuario fluida, segura e intuitiva. El diseño prioriza elementos clave para una aplicación financiera moderna, destacando la accesibilidad, la funcionalidad y la estética visual.
+WeatherWise es una aplicación simple e intuitiva para monitorear las condiciones climáticas en tiempo real. Desarrollada con un enfoque en la usabilidad y la precisión de la información, ofrece a los usuarios datos completos sobre el clima actual, pronósticos para los próximos días y alertas meteorológicas importantes.
 
 PORTUGUES:
-Este projeto consiste em um protótipo de design para um aplicativo bancário, idealizado para proporcionar uma experiência de usuário fluida, segura e intuitiva. O design prioriza elementos cruciais para um aplicativo financeiro contemporâneo, com destaque para acessibilidade, funcionalidade e estética visual.
+WeatherWise é um aplicativo simples e intuitivo para acompanhar as condições climáticas em tempo real. Desenvolvido com foco na usabilidade e na precisão das informações, ele oferece aos usuários dados completos sobre o clima atual, previsões para os próximos dias e alertas meteorológicos importantes.
 
 ENGLISH:
-This project consists of a prototype design for a banking application, designed to deliver a smooth, secure, and intuitive user experience. The design prioritizes key elements for a modern financial application, with a focus on accessibility, functionality, and visual aesthetics.
+WeatherWise is a simple and intuitive application for monitoring weather conditions in real-time. Developed with a focus on usability and information accuracy, it provides users with comprehensive data about current weather, forecasts for the coming days, and important weather alerts.
 
 
 ## :camera_flash: Screenshots
@@ -17,6 +17,7 @@ This project consists of a prototype design for a banking application, designed 
 
 
 ## Technologies
+- WeatherWise
 - Retrofit
 - API weather
 - Binding
