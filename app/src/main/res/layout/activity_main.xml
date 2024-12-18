@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/containerPrincipal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo_degradado"
+    tools:context=".MainActivity">
+
+    <Switch
+        android:id="@+id/trocarTema"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+    <TextView
+        android:id="@+id/txtTemperatura"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="50dp"
+        android:gravity="center"
+        android:text="20 °C"
+        android:textColor="@color/white"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/trocarTema" />
+
+    <TextView
+        android:id="@+id/txtPaisCidade"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Brasil - São Paulo"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTemperatura" />
+
+    <ImageView
+        android:id="@+id/img_clima"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtPaisCidade" />
+
+    <View
+        android:id="@+id/conteiner_info"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/fondo_degradado1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_clima" />
+
+    <TextView
+        android:id="@+id/txt_Informações"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="60dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="informações adicionais"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/conteiner_info"
+        app:layout_constraintStart_toStartOf="@id/conteiner_info"
+        app:layout_constraintTop_toTopOf="@id/conteiner_info" />
+
+    <TextView
+        android:id="@+id/txt_Informações1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginTop="20dp"
+        android:text="Clima \nCéu limpo \n\n Umidade \n 48"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/conteiner_info"
+        app:layout_constraintEnd_toStartOf="@id/txt_Informações2"
+        app:layout_constraintStart_toStartOf="@id/conteiner_info"
+        app:layout_constraintTop_toBottomOf="@id/txt_Informações" />
+
+    <TextView
+        android:id="@+id/txt_Informações2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginTop="18dp"
+        android:text="Temp.Min \n 21 \n\n Temp.Max \n 25"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/conteiner_info"
+        app:layout_constraintEnd_toEndOf="@id/conteiner_info"
+        app:layout_constraintStart_toEndOf="@id/txt_Informações1"
+        app:layout_constraintTop_toBottomOf="@+id/txt_Informações" />
+
+    <EditText
+        android:id="@+id/edit_Buscar_Cidade"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:elevation="20dp"
+        android:background="@drawable/container_info_tema_claro"
+        android:gravity="center"
+        android:hint="Buscar Cidade..."
+        android:maxLines="1"
+        android:padding="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/conteiner_info" />
+
+    <Button
+        android:id="@+id/bt_Buscar"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:text="Buscar"
+        android:layout_marginTop="15dp"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:backgroundTint="@color/dark_blue_600"
+        android:padding="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_Informações2"
+        app:layout_constraintStart_toEndOf="@id/edit_Buscar_Cidade"/>
+
+    <ProgressBar
+        android:id="@+id/progressbar"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:indeterminateTint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:visibility="gone"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>
